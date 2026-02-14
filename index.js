@@ -33,3 +33,36 @@ const bgHeader=()=>{
 }
 window.addEventListener('scroll',bgHeader)
 bgHeader()
+
+
+
+// const swiperService = new Swiper('.services_swiper', {
+//   // Optional parameters
+//   direction: 'vertical',
+//   loop: true,
+//   spaceBetween:24,
+//   slidesPerView:'auto',
+
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+
+// });
+
+
+const swiperService = new Swiper('.services_swiper', {
+  loop: true,
+  direction: 'horizontal',
+  spaceBetween: 24,
+//   grabCursor: true,
+  slidesPerView: 'auto',
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+

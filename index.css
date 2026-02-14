@@ -413,12 +413,137 @@ img {
   margin-right: 2.5rem;
 }
 /*=============== SERVICES ===============*/
+.services{
+  position: relative;
+}
+
+.services__container{
+  position: relative;
+  row-gap: 3rem;
+}
+.services__data{
+  text-align: center;
+}
+
+.service__description{
+  margin-bottom: 2rem;
+}
+
+.service__card{
+  width: 260px;
+  height: auto;
+  background-color: var(--container-color);
+  border: 2px solid var(--gray-border);
+  padding: 2rem 1rem 3.5rem;
+  transition: border-color .4s;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.service__card:hover{
+  border-color: var(--first-color);
+}
+
+.service_icon{
+width: 70px;
+height: 70px;
+background-color: var(--black-color);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.service_icon i{
+  color: white;
+  font-size: 2rem;
+}
+
+
 
 
 /* Swiper class */
+.swiper{
+  margin-inline: initial;
+  /* padding-bottom: 4rem; */
+}
 
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content:'';
+}
+.swiper-button-prev,
+.swiper-button-next{
+  top: initial;
+  position: absolute;
+  bottom: -10%;
+  width: 32px;
+  height: 32px;
+  background-color: var(--container-color);
+  box-shadow: 0 2px 8px black;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+.swiper-wrapper{
+  overflow:auto;
+  scrollbar-width: none;
+}
+
+.swiper-button-prev{
+  left: calc(50% - 50px);
+}
+
+.swiper-button-next{
+  right: calc(50% - 50px);
+}
+.services_swiper{
+  position: relative;
+  width: 100%;
+  align-items: center;
+  /* height: 400px; */
+}
 
 /*=============== PROJECTS ===============*/
+.project__card{
+width: 300px;
+  border: 2px solid transparent;
+  background-color: var(--container-color);
+  background-clip: content-box;
+  transition: border-color .4s;
+}
+.project__card:hover{border-color: var(--first-color);}
+.projects{
+  background-color:var(--black-color);
+  /* width: 400px; */
+}
+
+ .projects__data{
+  display: flex;
+gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+ }
+
+
+ .projects .section__title{
+  color: var(--white-color);
+ }
+ .projects_container{
+  padding-block: 1.5rem 3rem;
+ }
+ .project__card img{
+  width: 100%;
+  height: 300px;
+ }
+
+ .projects_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+ }
 
 
 /*=============== CONTACT ===============*/
